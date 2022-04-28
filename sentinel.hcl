@@ -1,9 +1,9 @@
 module "azure-functions" {
-  source = "../../azure-functions.sentinel"
+  source = "/../../azure-functions.sentinel"
 }
 
 module "tfplan-functions" {
-  source = "../../tfplan-functions.sentinel"
+  source = "/../../tfplan-functions.sentinel"
 }
 
 policy "allowed-terraform-version" {
@@ -12,3 +12,5 @@ policy "allowed-terraform-version" {
 policy "enforce-tags" {
   enforcement_level = "hard-mandatory"
 }
+
+  
